@@ -1,2 +1,2 @@
 # MA402
-Mathematics of Scientific Computing
+Mathematics of Scientific Computing @ NCSU
