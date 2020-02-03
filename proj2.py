@@ -54,7 +54,7 @@ class RANDU:
             self.vecs.append((self.nums[i-1], self.nums[i], self.nums[i+1]))
         self.vecs = pd.DataFrame(self.vecs, columns=['x', 'y', 'z']) / self.m
         fig = px.scatter_3d(self.vecs, x='x', y='y', z='z', color='y',
-                title="RANDUmly generated points; seed=11, n=1, ..., 10000".format(self.seed))
+                title="RANDUmly generated points; seed={}, n=1, ..., 10000".format(self.seed))
         fig.update_traces(marker=dict(size=8))
         return fig.show()
 
