@@ -18,9 +18,11 @@ SEED = 11
 # 1. Show that modulo 2**31
 #		I_n+2 - 6 * I_n+1 + 9 * I_n = 0
 # 2. Implement RANDU and verify graphically its severse lack of equi-distribution by
-#		creating a three dimensional plot of the 10,000 points for some odd I_0 of
+#		creating a three dimensional plot of 10,000 points for some odd I_0 of
 #		your choice. More precisely, plot
 #			{(I_n-1, I_n, I_n+1) / m} for n = 1, ..., 10,000
+
+# Solution 2.2
 class RANDU:
 	def __init__(self, seed):
 		self.a = 65539
