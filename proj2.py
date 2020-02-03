@@ -13,10 +13,10 @@ SEED = 11
 # Problem 2
 #   The infamous RANDU generator was part of the Scientific Subroutine Package on IBM
 #	mainframe computers in the 1960's; the generator corresponds to
-#		I_n+1 = (a * I_n + c) mod m,	n = 0, 1, ...
-#	with a = 65539, c = 0 and m = 2**31.
+#       I_n+1 = (a * I_n + c) mod m,	n = 0, 1, ...
+#   with a = 65539, c = 0 and m = 2**31.
 # 1. Show that modulo 2**31
-#		I_n+2 - 6 * I_n+1 + 9 * I_n = 0
+#       I_n+2 - 6 * I_n+1 + 9 * I_n = 0
 # 2. Implement RANDU and verify graphically its severse lack of equi-distribution by
 #       creating a three dimensional plot of 10,000 points for some odd I_0 of
 #       your choice. More precisely, plot
