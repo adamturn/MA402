@@ -19,8 +19,8 @@ SEED = 11
 #		I_n+2 - 6 * I_n+1 + 9 * I_n = 0
 # 2. Implement RANDU and verify graphically its severse lack of equi-distribution by
 #       creating a three dimensional plot of 10,000 points for some odd I_0 of
-#		your choice. More precisely, plot
-#			{(I_n-1, I_n, I_n+1) / m} for n = 1, ..., 10,000
+#       your choice. More precisely, plot
+#           {(I_n-1, I_n, I_n+1) / m} for n = 1, ..., 10,000
 
 # Solution 2.2
 class RANDU:
