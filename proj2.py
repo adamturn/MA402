@@ -35,7 +35,7 @@ class RANDU:
 	@staticmethod
 	def set_seed(seed):
 		if seed % 2 == 0:
-			seed += 1 
+		seed += 1 
 		return seed
 
 	def generate_nums(self, max_n):
@@ -54,7 +54,7 @@ class RANDU:
 			self.vecs.append((self.nums[i-1], self.nums[i], self.nums[i+1]))
 		self.vecs = pd.DataFrame(self.vecs, columns=['x', 'y', 'z']) / self.m
 		fig = px.scatter_3d(self.vecs, x='x', y='y', z='z', color='y',
-			title="RANDUmly generated points; seed=11, n=1, ..., 10000".format(self.seed))
+				title="RANDUmly generated points; seed=11, n=1, ..., 10000".format(self.seed))
 		fig.update_traces(marker=dict(size=8))
 		return fig.show()
 
@@ -72,6 +72,6 @@ for i in range(1, 10001):
 	r_vecs.append((r_dict[i-1], r_dict[i], r_dict[i+1]))
 r_vecs = pd.DataFrame(r_vecs, columns=['x', 'y', 'z'])
 fig = px.scatter_3d(r_vecs, x='x', y='y', z='z', color='y',
-	title="Python 'random'ly generated points; seed={}; n=1, ... , 10000".format(SEED))
+		title="Python 'random'ly generated points; seed={}; n=1, ... , 10000".format(SEED))
 fig.update_traces(marker=dict(size=8))
 fig.show()
