@@ -28,15 +28,14 @@ class RANDU:
         self.a = 65539
         self.c = 0
         self.m = 2**31
-        self.seed = RANDU.set_seed(seed)
+        self.seed = (lambda x: x+1 if x % 2 == 0 else x)(seed)
         self.nums = None
         self.vecs = None
 
-    @staticmethod
-    def set_seed(seed):
+    def set_seed(self, seed):
         if seed % 2 == 0:
             seed += 1 
-        return seed
+        self.seed = seed
 
     def generate_nums(self, max_n):
         I = self.seed
