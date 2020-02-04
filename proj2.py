@@ -37,11 +37,11 @@ class RANDU:
             seed += 1 
         self.seed = seed
 
-    def generate_nums(self, max_n):
+    def generate_nums(self, n):
         I = self.seed
         nums = {}
         nums[0] = I
-        for i in range(1, max_n+1):
+        for i in range(1, n+1):
             I = (self.a * I + self.c) % self.m
             nums[i] = I
         self.nums = nums
